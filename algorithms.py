@@ -21,7 +21,6 @@ def find_max(numbers):#O(1)
 
     return max_num
 # Overall time complexity is O(n)
-input_list = input("Enter numbers separated by spaces: ").split() #O(1)
-print("",find_max(input_list))
+input_list = list(map(int, input("Enter numbers separated by spaces: ").split())) #O(1)
+print("The maximum number is :",find_max(input_list))
 
-       
