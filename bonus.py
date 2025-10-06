@@ -12,7 +12,7 @@ def Fibonacci_sequence(n): # iterative approach
         sequence.append(next_number)
     
     return sequence
-    
+      # Overall time complexity is O(n)
 
 def fibonacci_sequence_recursive(n):
     if n < 0:
@@ -27,7 +27,7 @@ def fibonacci_sequence_recursive(n):
     if len(seq) < n:
         seq.append(seq[-1] + seq[-2])
     
-    return seq
+    return seq   # Overall time complexity is O(n)
 
 num=int(input("Enter a positive integer:"))
 print("Fibonacci sequence iterative approach up to",num,":",Fibonacci_sequence(num))
