@@ -24,3 +24,18 @@ def find_max(numbers):#O(1)
 input_list = list(map(int, input("Enter numbers separated by spaces: ").split())) #O(1)
 print("The maximum number is :",find_max(input_list))
 
+def linear_search(numbers, target): #O(1)
+    for num in numbers: #  loop runs n times where n is the length of the list so O(n)
+        if num == target: # O(1) per iteration → total O(n)
+            print("Found") # O(1)
+            return "True" # O(1)
+    print("Not Found") # O(1)
+    return "False" # O(1)
+    
+input_numbers = list(map(int,input("Enter numbers separated by spaces: ").split()))
+input_target = int(input("Enter the target number to search for:"))
+linear_search(input_numbers, input_target) # O(n)
+
+        
+
+       
